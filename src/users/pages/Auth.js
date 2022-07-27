@@ -1,24 +1,29 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { useForm } from "../../shared/hooks/form-hook";
+import {AuthContext} from '../../shared/context/auth-context'
+
+import "./Auth.css";
 
 import Button from "../../shared/components/FormElements/Button";
 import Input from "../../shared/components/FormElements/Input";
+import Card from "../../shared/components/UIelements/Card";
 
 import {
   VALIDATOR_EMAIL,
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE
 } from "../../shared/util/validators";
-import "./Auth.css";
-import Card from "../../shared/components/UIelements/Card";
+
 
 const Auth = () => {
+  const auth = useContext(AuthContext);
 
   const [isLoginMode, setIsLoginMode] = useState(true);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("guardando");
+    console.log(formState.inputs);
+    auth.login();
   };
 
   const switchModeHandler = () => { 
