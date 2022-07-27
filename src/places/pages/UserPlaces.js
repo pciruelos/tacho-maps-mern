@@ -6,40 +6,29 @@ import PlaceList from '../components/PlaceList';
 const DUMM_PLACES = [
   {
     id:'p1',
-    title:'Lugar 1',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatibus! Provident dolorum accusantium ab sed',
-    imgUrl:'https://hunyadi.info.hu/levente/images/stories/sigplus/birds1/IMG_0759.jpg',
-    address:'none',
+    title:'SuperBrugsen Code Secret',
+    description: 'You have to enter for Griffenfeldsgade and the secret code is doing a square with the numbers starting from the 9 and finising at 8 ;)',
+    imgUrl:'https://res.cloudinary.com/dhoebryld/image/upload/v1658952488/tacho/1_kwtvxi.png',
+    address:'Nørrebrogade 53 B, 2200 København N',
     location: {
-      lat: 55.70,
-      lng: 12.57
+      lat: 55.689566129093535,
+      lng: 12.555845577541024
     },
     creator:'u1',
   },
   {
     id:'p2',
-    title:'Lugar 2',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatibus! Provident dolorum accusantium ab sed',
-    imgUrl:"https://f.nordiskemedier.dk/2esm1ipu08eqi41b_660_479.jpg",
-    address:'none',
+    title:'Fakta Perfect Deal',
+    description: 'only one dump outside behaind fakta. good level.',
+    imgUrl:"https://res.cloudinary.com/dhoebryld/image/upload/v1658952758/tacho/2_vk2yjd.png",
+    address:'Sallingvej 60, 2720 København',
     location: {
-      lat: 55.7042552,
-      lng: 12.5773591
-    },
-    creator:'u2',
-  },
-  {
-    id:'p3',
-    title:'Lugar 3',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptatibus! Provident dolorum accusantium ab sed',
-    imgUrl:'https://hunyadi.info.hu/levente/images/stories/sigplus/birds1/IMG_0759.jpg',
-    address:'netto ostrebrogade',
-    location: {
-      lat: 55,
-      lng: 12
+      lat: 55.69297661941781,
+      lng:  12.500195139794025
     },
     creator:'u1',
   },
+
 
 ]
 
