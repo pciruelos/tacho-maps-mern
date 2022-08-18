@@ -15,17 +15,20 @@ const UsersList = props => {
         );
       }
       return (
+        <>
+        <h2 className='wrapp'>Most Popular Users:</h2>
         <ul className="users-list">
           {props.items.map(user => (
             <UserItem
-              key={user.id}
-              id={user.id}
-              image={user.image}
-              name={user.name}
-              placeCount={user.places}
+            key={user.id}
+            id={user.id}
+            image={user.image}
+            name={user.name}
+            placeCount={user.places}
             />
-          ))}
+            ))}
         </ul>
+            </>
       );
     };
 

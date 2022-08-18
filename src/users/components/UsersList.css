@@ -8,3 +8,10 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.wrapp {
+  /* color: #99ff99; */
+  color: rgb(0, 107, 0);
+  font-style: italic;
+  padding-left: 15px;
+}
