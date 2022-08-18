@@ -15,6 +15,7 @@ import MainNavigation from "./shared/components/navigation/MainNavigation";
 import UserPlaces from "./places/pages/UserPlaces";
 import UpdatePlace from "./places/pages/UpdatePlace";
 import Auth from "./users/pages/Auth";
+import Home from "./shared/components/Home";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
       <Switch>
 
         <Route exact path="/">
+          <Home />
           <Users />
         </Route>
 
@@ -56,8 +58,9 @@ const App = () => {
   } else {
     routes = (
       <Switch>
-
+        
         <Route exact path="/">
+          <Home />
           <Users />
         </Route>
 
