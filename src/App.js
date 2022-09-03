@@ -17,6 +17,10 @@ import UpdatePlace from "./places/pages/UpdatePlace";
 import Auth from "./users/pages/Auth";
 import Home from "./shared/components/Home/Home";
 import About from "./shared/components/Home/About";
+import Mision from "./shared/components/Home/Mision";
+import Sponsors from "./shared/components/Home/Sponsors";
+import Footer from "./shared/components/Home/Footer";
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,7 +42,9 @@ const App = () => {
         <Route exact path="/">
           <Home />
           <Users />
-          <About/>
+          <About/> 
+          <Mision/>
+          <Sponsors/>
         </Route>
 
         <Route exact path="/:userId/places">
@@ -65,6 +71,8 @@ const App = () => {
           <Home />
           <Users />
           <About/>
+          <Mision/>
+          <Sponsors/>
         </Route>
 
         <Route exact path="/:userId/places">
@@ -92,6 +100,7 @@ const App = () => {
             {routes}
           
         </main>
+        <Footer/>
       </Router>
     </AuthContext.Provider>
   );
